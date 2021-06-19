@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import "./styles.css"
 
 function BingoBoard({setup}){
     const [newNumber, setNewNumber] = useState();
@@ -12,7 +13,7 @@ function BingoBoard({setup}){
 
         if(newCalledNumbers.length - 1 === setup.higherNumber) endMatch();
     }
-    
+
     function generateNumber(){
         const randomNumber =  Math.floor(Math.random() * (setup.higherNumber - setup.smallerNumber + 1)) + setup.smallerNumber
 
@@ -31,14 +32,18 @@ function BingoBoard({setup}){
         setNewNumber('')
         setCalledNumbers([])
     }
-    
+
     return(
-        <div>
-            <button onClick={endMatch} disabled={!calledNumbers.length}>Novo Jogo</button>
-            <div>{newNumber}</div>
-            <button onClick={handleNumberGeneration}>Novo número</button>
-            <div>
+        <div className="board__container">
+            <div className="board__newNumber">{newNumber}</div>
+            <button onClick={handleNumberGeneration} className="btn">Novo número</button>
+            <div className="board__calledNumberContainer">
+                <div className="board__calledNumber">
                {getCalledNumberList()}
+                </div>
+                <div>
+                <button onClick={endMatch} disabled={!calledNumbers.length} className="btn">Novo Jogo</button>
+                </div>
             </div>
         </div>
     )

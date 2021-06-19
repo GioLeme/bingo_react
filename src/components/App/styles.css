@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../../assets/Images/background_image.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn{
+    width: 10vw;
+    height: 5vh;
+    align-self: center;
+    margin-top: 30px;
+    background-color: #FFE924;
+    border-color: #333333;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 10px;
+}

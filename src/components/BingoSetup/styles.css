@@ -1,0 +1,27 @@
+.bingoSetup__container{
+    flex: 0;
+    height: 60vh;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bingoSetup__logo{
+    width: 20vw;
+}
+
+.bingoSetup__form{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.bingoSetup__input{
+    height: 5vh;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
