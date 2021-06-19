@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import BingoSetup from '../BingoSetup';
 import BingoBoard from '../BingoBoard';
+import "./styles.css"
 
 function App(){
   const [setup,setSetup]= useState({
@@ -9,13 +10,13 @@ function App(){
   });
 
   return (
-    <div className="App">
+    <main className="container">
       {
-        setup.smallerNumber && setup.higherNumber 
-        ? <BingoBoard setSetup={setSetup} setup={setup}/> 
+        setup.smallerNumber && setup.higherNumber
+        ? <BingoBoard setSetup={setSetup} setup={setup}/>
         : <BingoSetup setSetup={setSetup}/>
       }
-    </div>
+    </main>
   );
 }
 

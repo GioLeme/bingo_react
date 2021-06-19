@@ -1,0 +1,42 @@
+.board__container{
+    width: 60vw;
+    height: 80vh;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.board__newNumber{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    font-size: 100px;
+    background-image: url("../../assets/Images/number.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-weight: bold;
+    color: rgb(148, 89, 40);
+}
+
+.board__calledNumberContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+    height: 20vh;
+    color: #fff;
+    padding: 20px;
+    font-size:25px;
+    gap: 5rem;
+    background-color: rgb(55, 99, 20);
+    border: 15px solid rgb(105, 61, 11);
+}
+
+.board__calledNumber{
+    overflow-y: auto;
+    height: 20vh;
+}
