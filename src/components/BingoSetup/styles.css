@@ -1,5 +1,4 @@
 .bingoSetup__container{
-    flex: 0;
     height: 60vh;
     padding: 0px 10px;
     display: flex;
@@ -9,11 +8,12 @@
 }
 
 .bingoSetup__logo{
-    width: 20vw;
+    width: 100%;
 }
 
 .bingoSetup__form{
-    width: 30vw;
+    width: 100%;
+    min-width: 30vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -21,7 +21,14 @@
 }
 
 .bingoSetup__input{
-    height: 5vh;
+    height: 3rem;
     border-radius: 10px;
     padding: 0px 10px;
+}
+
+.bingoSetup__hint{
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: -.8rem;
 }

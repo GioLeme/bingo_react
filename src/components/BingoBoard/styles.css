@@ -2,10 +2,15 @@
     width: 60vw;
     height: 80vh;
     padding: 0px 10px;
+    gap: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+.board__newNumberButton{
+    min-height: 3rem !important;
 }
 
 .board__newNumber{
@@ -13,8 +18,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 200px;
-    height: 200px;
+    min-width: 200px;
+    min-height: 200px;
     font-size: 100px;
     background-image: url("../../assets/Images/number.png");
     background-repeat: no-repeat;
@@ -25,18 +30,43 @@
 
 .board__calledNumberContainer{
     display: flex;
-    justify-content: space-between;
-    width: 60vw;
-    height: 20vh;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    height: 40vh;
     color: #fff;
     padding: 20px;
     font-size:25px;
-    gap: 5rem;
+    gap: 1rem;
     background-color: rgb(55, 99, 20);
-    border: 15px solid rgb(105, 61, 11);
+    border: 5px solid rgb(105, 61, 11);
 }
 
 .board__calledNumber{
+    flex: 1;
     overflow-y: auto;
-    height: 20vh;
+}
+
+@media screen and (min-width: 695px) {
+    .board__newNumberButton{
+        max-width: 30vw;
+    }
+
+    .board__calledNumberContainer{
+        width: 60vw;
+        height: 20vh;
+        flex-direction: row;
+        border: 15px solid rgb(105, 61, 11);
+        margin-top: 0px;
+        gap: 5rem;
+    }
+
+    .board__newGameButton{
+        flex: 0;
+        min-width: 200px;
+    }
+
+    .board__container{
+        gap: 0;
+    }
 }

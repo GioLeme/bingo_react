@@ -36,13 +36,13 @@ function BingoBoard({setup}){
     return(
         <div className="board__container">
             <div className="board__newNumber">{newNumber}</div>
-            <button onClick={handleNumberGeneration} className="btn">Novo número</button>
+            <button onClick={handleNumberGeneration} className="btn board__newNumberButton">Novo número</button>
             <div className="board__calledNumberContainer">
                 <div className="board__calledNumber">
                {getCalledNumberList()}
                 </div>
                 <div>
-                <button onClick={endMatch} disabled={!calledNumbers.length} className="btn">Novo Jogo</button>
+                <button onClick={endMatch} disabled={!calledNumbers.length} className="btn board__newGameButton">Novo Jogo</button>
                 </div>
             </div>
         </div>
